@@ -8,6 +8,7 @@ header{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .nav_links{
@@ -15,7 +16,8 @@ header{
     flex-direction: column;
 }
 
-.nav_links a:visited{
+a:visited{
+    text-decoration:none;
     color: blue;
 }
 
@@ -39,6 +41,7 @@ header{
     justify-content: center;
     align-items: center;
     align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -73,9 +76,8 @@ header img{
     .nav_links{
         display: flex;
         flex-direction: row;
-        align-content: center;
-        justify-content: space-around;
     }
+
     body > header{
         position: sticky;
         top: 0;
@@ -114,5 +116,13 @@ header img{
     }
     .gallery{
         display: none;
+    }
+
+    #gallery{
+        display: none;
+    }
+
+    .card li:nth-of-type(2)::after{
+        content: "👍";
     }
 }
